@@ -1,8 +1,38 @@
 Ejercicio 1
 
-Creamos el entorno con el command:
-python3 -m venv venv (puedes darle el nombre que quieras)
-Para activar el entorno ejecutamos:
+- Creamos el entorno con el command:
+python3 -m venv venv (puedes darle el nombre que quieras a lo último)
+
+- Para activar el entorno ejecutamos:
 source venv/bin/activate
-Instalaremos los paquetes necesarios que aparecen en requirements.txt con el command:
+
+- Instalaremos los paquetes necesarios(dependencias) que aparecen en requirements.txt con el command:
 pip install -r requirements.txt
+
+- Miramos el archico django_tutorial/settings.py para ver en qué base de datos vamos a usar:
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
+Usaremos sqlite con su respectivo nombre.
+
+- Creamos la base de datos con el siguiente command:
+python3 manage.py migrate
+
+- Creamos un superusuario con el command:
+python3 manage.py createsuperuser
+Nos pedirá nombre, correo y contraseña. En mi caso: admin, admin@admin.com, admin1234.
+
+- Runeamos el servidor:
+python3 manage.py runserver
+Accedemos al apartado de admin como podemos ver en la primera captura llamada 'Admin.png' y vemos que los datos son correctos.
+Creamos las dos preguntas pedidas con sus respectivas respuestas desde aquí.
+Vemos que se han creado correctamente en la siguiente captura llamada 'Admin_preguntas.png'.
+Accedemos a la url /polls. Vemos en la última captura llamada 'Polls_preguntas.png' podemos responder las preguntas con las respuestas establecidas anteriormente.
+
+
+
+
+
