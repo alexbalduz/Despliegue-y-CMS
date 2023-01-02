@@ -1,0 +1,8 @@
+Ejercicio 1
+
+Creamos el entorno con el command:
+python3 -m venv venv (puedes darle el nombre que quieras)
+Para activar el entorno ejecutamos:
+source venv/bin/activate
+Instalaremos los paquetes necesarios que aparecen en requirements.txt con el command:
+pip install -r requirements.txt
