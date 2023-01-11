@@ -1,0 +1,7 @@
+Ejercicio 2
+
+Creamos nueva carpeta con los archivos iniciales.
+Creamos entorno virtual igual que antes y lo activamos.
+Instalamos las dependendencias como antes.
+Instalamos mysqlclient con el siguiente command para trabajar con mysql:
+- pip3 install mysqlclient (error al instalar por la version de python, solo soporta hasta la version 3.7)
